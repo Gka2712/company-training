@@ -1,10 +1,13 @@
+import java.util.*;
 public class sample{
     public static void main(String[] args){
-        int[] array={10,20,30,40,50};
-        array[2]=array[4];
-        array[4]=90;
-        for(int i=0;i<array.length;i++){
-            System.out.print(" "+array[i]);
+        ArrayList<String> array=new ArrayList<String>();       
+        array.add("山田"+30+"歳");
+        array.add("鈴木"+50+"歳");
+        for(Iterator<String> it=array.iterator();it.hasNext();){
+            String name=it.next();
+            name=it.next();
+            System.out.print(name);
         }
     }
 }
